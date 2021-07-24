@@ -1,0 +1,206 @@
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+a,
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.loadingAnimation {
+  text-align: center;
+}
+
+.heading {
+  overflow: auto;
+  align-items: center;
+}
+
+.title {
+  float: left;
+}
+
+.navButtons {
+  float: right;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+}
+
+.detailsBasicInfo {
+  float: left;
+  width: 33%;
+}
+
+.detailsRecipeImg {
+  width: 66%;
+  min-width: 400px;
+}
+
+.detailsBody {
+  margin-top: 15px;
+  overflow: auto;
+}
+
+.detailsIngredients {
+  width: 40%;
+  float: left;
+}
+
+.detailsDirections {
+  float: left;
+  width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+  .detailsDirections,
+  .detailsIngredients {
+    width: 100%;
+  }
+}
+
+.editBody {
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.editBasicInfo {
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+}
+
+.editIngredients {
+  width: 30%;
+  float: left;
+  padding-right: 20px;
+}
+
+.editIngredientsAmount {
+  width: 50%;
+  float: left;
+  padding-right: 5px;
+  margin-bottom: 8px;
+}
+
+.editIngredientsUnit {
+  width: 50%;
+  padding-left: 5px;
+  float: left;
+}
+
+.editIngredientsName {
+  float: left;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.addIngredientButton {
+  width: 25%;
+  float: right;
+}
+
+.editGroupName {
+  float: left;
+  width: 75%;
+}
+
+.editDirections {
+  width: 50%;
+  float: left;
+}
+
+.editPreview {
+  margin-top: 15px;
+  overflow: auto;
+}
+
+.editPreviewIngredients {
+  float: left;
+  width: 40%;
+  overflow: auto;
+}
+
+.editPreviewDirections {
+  overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .editBasicInfo,
+  .editIngredients,
+  .editDirections,
+  .editPreviewIngredients,
+  .editPreviewDirections {
+    width: 100%;
+  }
+}
+
+.ingredientList {
+  list-style-type: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.ingredientItem,
+.ingredientItemGroup {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+.ingredientItemGroup {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.ingredientItemTrash {
+  float: left;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.ingredientItemAmount {
+  float: left;
+  width: 10%;
+  text-align: right;
+  min-height: 1px;
+}
+
+.ingredientItemUnit {
+  float: left;
+  padding-left: 15px;
+  width: 22%;
+  min-height: 1px;
+}
+
+.ingredientItemName {
+  float: left;
+}
+
+.editPreviewIngredients,
+.detailsIngredients {
+  padding-right: 10px;
+}
+
+.editPreviewDirections,
+.detailsDirections {
+  padding-left: 10px;
+}
