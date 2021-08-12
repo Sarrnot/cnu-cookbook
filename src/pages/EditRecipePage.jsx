@@ -57,6 +57,7 @@ export function EditRecipePage() {
           setRedirect(`/recept/${data.data.slug}`);
         })
         .catch(() => {
+          setLoading(false);
           notify.show('Název již existuje', 'error');
         });
     }
